@@ -2,8 +2,6 @@
 
 A react UI to query the NYT article database by search term, then display the results on the page. Users can save article links to the "saved" section
 
-[Live site](https://salty-bayou-25776.herokuapp.com/)
-
 ## Getting Started
 
 ### Prerequisites
