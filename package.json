@@ -1,27 +1,28 @@
 {
-  "name": "react-article-app",
+  "name": "mern",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sameen63/react-article-app.git"
+    "installDeps": "yarn && cd client && yarn"
   },
   "author": "sameen",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Sameen63/react-article-app/issues"
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
   },
-  "homepage": "https://github.com/Sameen63/react-article-app#readme",
   "dependencies": {
-    "axios": "^0.17.1",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "mongoose": "^4.13.7",
-    "react-router-dom": "^4.2.2"
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7",
+    "react-router-dom": "^4.1.2"
   }
 }

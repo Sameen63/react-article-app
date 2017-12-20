@@ -11,13 +11,11 @@ mongoose.connect(
 
 const articleSeed = [
   {
-    title: "Tobi the dog",
+    title: "How to Workout",
     date: new Date(Date.now()),
-    url: "http://alyssakeimach.com"
   }, {
-    title: "How to fix a squeaky windshield",
-    date: new Date(Date.now()),
-    url: "http://alyssakeimach.com"
+    title: "How to fix something",
+    date: new Date(Date.now()),   
   }
 ];
 
